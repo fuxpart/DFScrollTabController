@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="REL-IV-2Fi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DFScrollTabControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6V-VN-mXR">
+                                <rect key="frame" x="50" y="204" width="275" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="urV-M5-gQD"/>
+                                </constraints>
+                                <state key="normal" title="fixed tab bar"/>
+                                <connections>
+                                    <action selector="fixed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMP-mq-AnZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-UE-6pH">
+                                <rect key="frame" x="50" y="114" width="275" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YyO-ab-let"/>
+                                </constraints>
+                                <state key="normal" title="scrollable tab bar"/>
+                                <connections>
+                                    <action selector="scrollable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOG-EK-NYZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y6V-VN-mXR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="AL1-EF-H6N"/>
+                            <constraint firstItem="lUd-UE-6pH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="FJ6-Vr-aTk"/>
+                            <constraint firstItem="Y6V-VN-mXR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hvv-re-3Wr"/>
+                            <constraint firstItem="lUd-UE-6pH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KCX-SX-jTe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lUd-UE-6pH" secondAttribute="trailing" constant="50" id="QNN-UI-zWz"/>
+                            <constraint firstItem="lUd-UE-6pH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Sm5-CJ-yNI"/>
+                            <constraint firstItem="Y6V-VN-mXR" firstAttribute="top" secondItem="lUd-UE-6pH" secondAttribute="bottom" constant="50" id="YOh-wC-YTs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y6V-VN-mXR" secondAttribute="trailing" constant="50" id="i4j-mF-5eo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Demo" id="Ifh-Ha-Cr5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-580"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ag6-9Q-Vyw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="REL-IV-2Fi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F8o-Ka-d5j">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="grg-Xf-Zcv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIZ-JQ-ULH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="-579.76011994002999"/>
+        </scene>
+    </scenes>
+</document>
