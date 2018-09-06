@@ -39,17 +39,17 @@ open class TabBarBase: UIView {
     
     /// Color of the title. To modify, subclass and override
     open var color: UIColor {
-        return UIColor.black
+        return .black
     }
     
     /// Color of the title when selected. To modify, subclass and override
     open var selectedColor: UIColor {
-        return UIColor.red
+        return .red
     }
     
     /// Font of the title. To modify, subclass and override
     open var font: UIFont {
-        return UIFont.systemFont(ofSize: 14)
+        return .systemFont(ofSize: 14)
     }
     
     /// Height of the indicator. To modify, subclass and override
@@ -59,12 +59,12 @@ open class TabBarBase: UIView {
     
     /// Color of the indicator. To modify, subclass and override
     open var indicatorColor: UIColor {
-        return UIColor.red
+        return .red
     }
 
     /// Color of the shadow line. To modify, subclass and override
     open var shadowLineColor: UIColor {
-        return UIColor.lightGray
+        return .lightGray
     }
 
     let itemTag = 100
